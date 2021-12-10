@@ -1,0 +1,89 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Antlr4.Runtime.Standard/4.9.3": {
+        "runtime": {
+          "lib/netstandard2.0/Antlr4.Runtime.Standard.dll": {
+            "assemblyVersion": "4.9.3.0",
+            "fileVersion": "4.9.3.0"
+          }
+        }
+      },
+      "libLLVM/12.0.0": {},
+      "libLLVM.runtime.win-x64/12.0.0": {
+        "runtimeTargets": {
+          "runtimes/win-x64/native/libLLVM.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "12.0.0.0"
+          }
+        }
+      },
+      "LLVMSharp/12.0.0-beta1": {
+        "dependencies": {
+          "LLVMSharp.Interop": "12.0.0-beta1",
+          "libLLVM": "12.0.0"
+        },
+        "runtime": {
+          "lib/net5.0/LLVMSharp.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.0.0"
+          }
+        }
+      },
+      "LLVMSharp.Interop/12.0.0-beta1": {
+        "dependencies": {
+          "libLLVM": "12.0.0"
+        },
+        "runtime": {
+          "lib/net5.0/LLVMSharp.Interop.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Antlr4.Runtime.Standard/4.9.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wn+a34a9r3jOMxnIWxWJQ7QAbKi+KyZ9YAiEVVw0qII0J4Z6Z9F6a1b8WNzU00LlsIt++nZIz1BokksielrQYA==",
+      "path": "antlr4.runtime.standard/4.9.3",
+      "hashPath": "antlr4.runtime.standard.4.9.3.nupkg.sha512"
+    },
+    "libLLVM/12.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TqbM24TqdI7me0WVGBrnofdkVsRIPb1wtA6M2swDqgyrbGJ9990LYtg6C7/EGYQndi92z+b+tZV1uA/af7RRyQ==",
+      "path": "libllvm/12.0.0",
+      "hashPath": "libllvm.12.0.0.nupkg.sha512"
+    },
+    "libLLVM.runtime.win-x64/12.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1UeZMyVvj4mZOUwJusEJk9a1uO8RdqPlKQYQbs1Q0BLyRBW+tpHw9imbRN2fbS8W+xu/IslUnx/m05qAhEbWsQ==",
+      "path": "libllvm.runtime.win-x64/12.0.0",
+      "hashPath": "libllvm.runtime.win-x64.12.0.0.nupkg.sha512"
+    },
+    "LLVMSharp/12.0.0-beta1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5isfhfR+ZndtkcMXM8fv03oZtf9Z2lGhud2km0FrmeyO8or1LfdDh6cM+IKLhyWI9AVm1JXxEiwFQRCPu01+OQ==",
+      "path": "llvmsharp/12.0.0-beta1",
+      "hashPath": "llvmsharp.12.0.0-beta1.nupkg.sha512"
+    },
+    "LLVMSharp.Interop/12.0.0-beta1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Fufu7/8WVwVbc9pp+YBCVwJ/QXzlMjVYr9k4TpA3gAofKuS8DNEmZusMwo3nEjGNI7UCajwBPW6SEjART2kz0w==",
+      "path": "llvmsharp.interop/12.0.0-beta1",
+      "hashPath": "llvmsharp.interop.12.0.0-beta1.nupkg.sha512"
+    }
+  }
+}

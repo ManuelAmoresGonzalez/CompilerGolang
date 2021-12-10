@@ -1,0 +1,215 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0-windows7.0": {
+      "Antlr4.Runtime.Standard/4.9.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Antlr4.Runtime.Standard.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Antlr4.Runtime.Standard.dll": {}
+        }
+      },
+      "libLLVM/12.0.0": {
+        "type": "package"
+      },
+      "libLLVM.runtime.win-x64/12.0.0": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/win-x64/native/libLLVM.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          }
+        }
+      },
+      "LLVMSharp/12.0.0-beta1": {
+        "type": "package",
+        "dependencies": {
+          "LLVMSharp.Interop": "12.0.0-beta1",
+          "libLLVM": "12.0.0"
+        },
+        "compile": {
+          "lib/net5.0/LLVMSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/LLVMSharp.dll": {}
+        }
+      },
+      "LLVMSharp.Interop/12.0.0-beta1": {
+        "type": "package",
+        "dependencies": {
+          "libLLVM": "12.0.0"
+        },
+        "compile": {
+          "lib/net5.0/LLVMSharp.Interop.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/LLVMSharp.Interop.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Antlr4.Runtime.Standard/4.9.3": {
+      "sha512": "wn+a34a9r3jOMxnIWxWJQ7QAbKi+KyZ9YAiEVVw0qII0J4Z6Z9F6a1b8WNzU00LlsIt++nZIz1BokksielrQYA==",
+      "type": "package",
+      "path": "antlr4.runtime.standard/4.9.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "antlr4.runtime.standard.4.9.3.nupkg.sha512",
+        "antlr4.runtime.standard.nuspec",
+        "lib/net45/Antlr4.Runtime.Standard.dll",
+        "lib/net45/Antlr4.Runtime.Standard.xml",
+        "lib/netstandard2.0/Antlr4.Runtime.Standard.dll",
+        "lib/netstandard2.0/Antlr4.Runtime.Standard.xml"
+      ]
+    },
+    "libLLVM/12.0.0": {
+      "sha512": "TqbM24TqdI7me0WVGBrnofdkVsRIPb1wtA6M2swDqgyrbGJ9990LYtg6C7/EGYQndi92z+b+tZV1uA/af7RRyQ==",
+      "type": "package",
+      "path": "libllvm/12.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "libllvm.12.0.0.nupkg.sha512",
+        "libllvm.nuspec",
+        "runtime.json"
+      ]
+    },
+    "libLLVM.runtime.win-x64/12.0.0": {
+      "sha512": "1UeZMyVvj4mZOUwJusEJk9a1uO8RdqPlKQYQbs1Q0BLyRBW+tpHw9imbRN2fbS8W+xu/IslUnx/m05qAhEbWsQ==",
+      "type": "package",
+      "path": "libllvm.runtime.win-x64/12.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "libllvm.runtime.win-x64.12.0.0.nupkg.sha512",
+        "libllvm.runtime.win-x64.nuspec",
+        "runtimes/win-x64/native/libLLVM.dll"
+      ]
+    },
+    "LLVMSharp/12.0.0-beta1": {
+      "sha512": "5isfhfR+ZndtkcMXM8fv03oZtf9Z2lGhud2km0FrmeyO8or1LfdDh6cM+IKLhyWI9AVm1JXxEiwFQRCPu01+OQ==",
+      "type": "package",
+      "path": "llvmsharp/12.0.0-beta1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net5.0/LLVMSharp.dll",
+        "lib/netcoreapp3.1/LLVMSharp.dll",
+        "lib/netstandard2.0/LLVMSharp.dll",
+        "llvmsharp.12.0.0-beta1.nupkg.sha512",
+        "llvmsharp.nuspec"
+      ]
+    },
+    "LLVMSharp.Interop/12.0.0-beta1": {
+      "sha512": "Fufu7/8WVwVbc9pp+YBCVwJ/QXzlMjVYr9k4TpA3gAofKuS8DNEmZusMwo3nEjGNI7UCajwBPW6SEjART2kz0w==",
+      "type": "package",
+      "path": "llvmsharp.interop/12.0.0-beta1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net5.0/LLVMSharp.Interop.dll",
+        "lib/netcoreapp3.1/LLVMSharp.Interop.dll",
+        "lib/netstandard2.0/LLVMSharp.Interop.dll",
+        "llvmsharp.interop.12.0.0-beta1.nupkg.sha512",
+        "llvmsharp.interop.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0-windows7.0": [
+      "Antlr4.Runtime.Standard >= 4.9.3",
+      "LLVMSharp >= 12.0.0-beta1",
+      "LLVMSharp.Interop >= 12.0.0-beta1",
+      "libLLVM >= 12.0.0",
+      "libLLVM.runtime.win-x64 >= 12.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\manue\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\ProyectoCompiladores\\ProyectoCompiladores.csproj",
+      "projectName": "ProyectoCompiladores",
+      "projectPath": "D:\\ProyectoCompiladores\\ProyectoCompiladores.csproj",
+      "packagesPath": "C:\\Users\\manue\\.nuget\\packages\\",
+      "outputPath": "D:\\ProyectoCompiladores\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\manue\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0-windows7.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0-windows7.0": {
+          "targetAlias": "net5.0-windows",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0-windows7.0": {
+        "targetAlias": "net5.0-windows",
+        "dependencies": {
+          "Antlr4.Runtime.Standard": {
+            "target": "Package",
+            "version": "[4.9.3, )"
+          },
+          "LLVMSharp": {
+            "target": "Package",
+            "version": "[12.0.0-beta1, )"
+          },
+          "LLVMSharp.Interop": {
+            "target": "Package",
+            "version": "[12.0.0-beta1, )"
+          },
+          "libLLVM": {
+            "target": "Package",
+            "version": "[12.0.0, )"
+          },
+          "libLLVM.runtime.win-x64": {
+            "target": "Package",
+            "version": "[12.0.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WindowsForms": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

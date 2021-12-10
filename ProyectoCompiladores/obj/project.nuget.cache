@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "1drLD4ULLe0kGwwsdGZUV9n/e4TCIJIqoC9kTEZiBmZPscCfVCG5ZoTOCpQd9ZvSGQMFabG5qKfIK6ET04hpdQ==",
+  "success": true,
+  "projectFilePath": "D:\\ProyectoCompiladores\\ProyectoCompiladores.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\manue\\.nuget\\packages\\antlr4.runtime.standard\\4.9.3\\antlr4.runtime.standard.4.9.3.nupkg.sha512",
+    "C:\\Users\\manue\\.nuget\\packages\\libllvm\\12.0.0\\libllvm.12.0.0.nupkg.sha512",
+    "C:\\Users\\manue\\.nuget\\packages\\libllvm.runtime.win-x64\\12.0.0\\libllvm.runtime.win-x64.12.0.0.nupkg.sha512",
+    "C:\\Users\\manue\\.nuget\\packages\\llvmsharp\\12.0.0-beta1\\llvmsharp.12.0.0-beta1.nupkg.sha512",
+    "C:\\Users\\manue\\.nuget\\packages\\llvmsharp.interop\\12.0.0-beta1\\llvmsharp.interop.12.0.0-beta1.nupkg.sha512"
+  ],
+  "logs": []
+}
